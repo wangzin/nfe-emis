@@ -36,7 +36,7 @@ public class UserDaoImpl implements UserDao{
 			UserModal output = null;
 			Query query = entityManager.createQuery(sql);
 			output = (UserModal) query.getSingleResult();
-		return output;
+			return output;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;

@@ -14,13 +14,16 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public UserDto getUserDetails(String userId) {
 		UserModal user=dao.getUserDetails(userId);
+		
 		UserDto dto=new UserDto();
+		
 		dto.setCid(user.getCid());
 		dto.setContact(user.getPhoneNo());
 		dto.setEmail(user.getEmail());
 		dto.setFullName(user.getName());
 		dto.setGender(user.getGender().getGender());
 		dto.setUserId(user.getId());
+		
 		return dto;
 	}
 	

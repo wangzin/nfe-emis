@@ -3,6 +3,7 @@ package bt.gov.moe.nfe.newedge.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import bt.gov.moe.nfe.newedge.dto.UserDto;
@@ -22,6 +23,7 @@ public class BaseController {
 	public ModelAndView loginPage(){
 		return new ModelAndView("public/index");
 	}
+	
 	@GetMapping("/dashboard")
 	public ModelAndView userlogin(HttpServletRequest request,Model model){
 		HttpSession session = request.getSession();

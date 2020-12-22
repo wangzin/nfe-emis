@@ -25,4 +25,9 @@ public class CommonController {
 		model.addAttribute("current_page", "nfe/common/profile");  
 		return new ModelAndView("nfe/common/dashboard");
 	}
+	@GetMapping("/mastermanagement")
+	public ModelAndView mastermanagement(HttpServletRequest request,Model model){
+		model.addAttribute("current_page", "nfe/admininstration/masterindex");  
+		return new ModelAndView("nfe/common/dashboard");
+	}
 }

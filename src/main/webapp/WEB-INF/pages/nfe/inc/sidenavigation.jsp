@@ -14,9 +14,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/mastermanagement" class="nav-link">
               <i class="nav-icon fas fa-list"></i>
-              Sample Link
+              Master Management
             </a>
           </li>
           <li class="nav-item has-treeview">
